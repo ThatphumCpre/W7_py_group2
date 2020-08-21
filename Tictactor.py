@@ -3,7 +3,8 @@ class Board() :
         self.listBoard = [[" "," "," "],[" "," "," "],[" "," "," " ]]
         self.player="o"
         self.round=1
-        self.text = TextInput();
+        self.text = TextInput()
+		self.Print = Printer()
 
     def start(self) :
         while(True) :
@@ -14,6 +15,7 @@ class Board() :
                 self.player = "o"
             else :
                 self.player = "x"
+				self.Print.drawBoard(self)
 
     def getBoard(self,position_x,position_y) :
         return self.listBoard[position_x][position_y]
@@ -41,7 +43,11 @@ class TextInput() :
 
 class Printer() :
     def drawBoard(self,obj) :
-        pass
+        println(obj.listBoard[0][0] + " | " + obj.listBoard[0][1] + " | " + obj.listBoard[0][2])
+		println("-------------")
+		println(obj.listBoard[0][0] + " | " + obj.listBoard[0][1] + " | " + obj.listBoard[0][2])
+        println("-------------")
+		println(obj.listBoard[0][0] + " | " + obj.listBoard[0][1] + " | " + obj.listBoard[0][2]+"\n")
 
 game1=Board()
 game1.start()
