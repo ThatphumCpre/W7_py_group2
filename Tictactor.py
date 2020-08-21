@@ -7,15 +7,20 @@ class Board() :
         self.Print = Printer()
 
     def start(self) :
-        while(True) :
-            print("Player",self.player,"Turn ")
-            self.text.placeMarker(self.player, self)
-            print(self.listBoard)
+        while(self.winCheck()) :
+            if self.round > 9:
+                break
             if self.round%2==1 :
                 self.player = "o"
             else :
                 self.player = "x"
+            print("Player",self.player,"Turn ")
+            self.text.placeMarker(self.player, self)
             self.Print.drawBoard(self)
+        if not self.winCheck():
+            print("Player",self.player,"win.")
+        else:
+            print("Draw")
 
     def getBoard(self,position_x,position_y) :
         return self.listBoard[position_x][position_y]
@@ -25,7 +30,24 @@ class Board() :
         self.round += 1
 
     def winCheck(self) :
-        pass
+        if self.listBoard[0][0] == self.listBoard[0][1] == self.listBoard[0][2] and self.listBoard[0][2] != " ":
+            return False
+        elif self.listBoard[1][0] == self.listBoard[1][1] == self.listBoard[1][2] and self.listBoard[1][2] != " ":
+            return False
+        elif self.listBoard[2][0] == self.listBoard[2][1] == self.listBoard[2][2] and self.listBoard[2][2] != " ":
+            return False
+        elif self.listBoard[0][0] == self.listBoard[1][0] == self.listBoard[2][0] and self.listBoard[2][0] != " ":
+            return False
+        elif self.listBoard[0][1] == self.listBoard[1][1] == self.listBoard[2][1] and self.listBoard[2][1] != " ":
+            return False
+        elif self.listBoard[0][2] == self.listBoard[1][2] == self.listBoard[2][2] and self.listBoard[2][2] != " ":
+            return False
+        elif self.listBoard[0][0] == self.listBoard[1][1] == self.listBoard[2][2] and self.listBoard[2][2] != " ":
+            return False
+        elif self.listBoard[0][2] == self.listBoard[1][1] == self.listBoard[2][0] and self.listBoard[2][0] != " ":
+            return False
+        else:
+            return True
 
     def clearBoard(self) :
         self.listBoard = [[" "," "," "],[" "," "," "],[" "," "," " ]]
