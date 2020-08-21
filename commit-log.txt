@@ -1,0 +1,47 @@
+commit 53fb0148e41e8d4fc2d70fedf6b5364912dbd681
+Author: Thatphum <s6201012620112@email.kmutnb.ac.th>
+Date:   Fri Aug 21 14:39:56 2020 +0700
+
+    "-Add play again and Comment"
+
+commit 4ecb12a0cc8b72463d47941c4f0949d3c1fdb2c9
+Author: Purin Petch-in <s6201012620325@email.kmutnb.ac.th>
+Date:   Fri Aug 21 14:17:11 2020 +0700
+
+    Modify attibute print
+
+commit cc2baf8f8120ad75f4cfa6a7ff147cf2cf51affa
+Author: Purin Petch-in <s6201012620325@email.kmutnb.ac.th>
+Date:   Fri Aug 21 14:08:52 2020 +0700
+
+    Add win condition
+
+commit a0acd4f1b676f6f1002f951b70b14f5efd435edc
+Author: Thatphum <s6201012620112@email.kmutnb.ac.th>
+Date:   Fri Aug 21 13:57:44 2020 +0700
+
+    -Fixed Error Input and table
+
+commit 6e6b40bcc020373a5f2cc6cf18d3cd5697fd8f0d
+Author: Thannathorn Somton <s6201012610010@email.kmutnb.ac.th>
+Date:   Fri Aug 21 13:47:16 2020 +0700
+
+    Draw table
+
+commit f0e8566d649e57551b25a7202dfa567f16441c4f
+Author: Thatphum <s6201012620112@email.kmutnb.ac.th>
+Date:   Fri Aug 21 13:01:22 2020 +0700
+
+    -Fixed Error when input over upper,lower bound
+
+commit 67301f8e3d3e85e9addc141940ba486ad992169d
+Author: Thatphum <s6201012620112@email.kmutnb.ac.th>
+Date:   Fri Aug 21 12:40:10 2020 +0700
+
+    "Board Class and getter,setter"
+
+commit 1768143bb800225eec23eb2ba398df6f7f584fbe
+Author: Thatphum <s6201012620112@email.kmutnb.ac.th>
+Date:   Fri Aug 21 12:00:38 2020 +0700
+
+    "Create structure and Test input"
