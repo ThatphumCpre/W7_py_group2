@@ -4,9 +4,10 @@ class Board() :
         self.player="o"
         self.round=1
         self.text = TextInput()
-        self.Print = Printer()
+        self.print = Printer()
 
     def start(self) :
+        self.print.drawBoard(self)
         while(self.winCheck()) :
             if self.round > 9:
                 break
@@ -16,7 +17,7 @@ class Board() :
                 self.player = "x"
             print("Player",self.player,"Turn ")
             self.text.placeMarker(self.player, self)
-            self.Print.drawBoard(self)
+            self.print.drawBoard(self)
         if not self.winCheck():
             print("Player",self.player,"win.")
         else:
