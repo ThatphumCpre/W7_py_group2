@@ -4,7 +4,7 @@ class Board() :
         self.player="o"
         self.round=1
         self.text = TextInput()
-		self.Print = Printer()
+        self.Print = Printer()
 
     def start(self) :
         while(True) :
@@ -15,7 +15,7 @@ class Board() :
                 self.player = "o"
             else :
                 self.player = "x"
-				self.Print.drawBoard(self)
+            self.Print.drawBoard(self)
 
     def getBoard(self,position_x,position_y) :
         return self.listBoard[position_x][position_y]
@@ -34,7 +34,7 @@ class TextInput() :
     def placeMarker(self, player,obj) :
         x = int(input("insert x : "))
         y = int(input("insert y : "))
-        if((x>2 or x<0 or y>2 or y<2)) :
+        if((x>2 or x<0 or y>2 or y<0)) :
             print("Error Insert again")
         elif (obj.getBoard(x,y)!=" ") :
             print("Overlap Insert again")
@@ -43,11 +43,11 @@ class TextInput() :
 
 class Printer() :
     def drawBoard(self,obj) :
-        println(obj.listBoard[0][0] + " | " + obj.listBoard[0][1] + " | " + obj.listBoard[0][2])
-		println("-------------")
-		println(obj.listBoard[0][0] + " | " + obj.listBoard[0][1] + " | " + obj.listBoard[0][2])
-        println("-------------")
-		println(obj.listBoard[0][0] + " | " + obj.listBoard[0][1] + " | " + obj.listBoard[0][2]+"\n")
+        print(obj.listBoard[0][0] + " | " + obj.listBoard[0][1] + " | " + obj.listBoard[0][2])
+        print("----------")
+        print(obj.listBoard[1][0] + " | " + obj.listBoard[1][1] + " | " + obj.listBoard[1][2])
+        print("----------")
+        print(obj.listBoard[2][0] + " | " + obj.listBoard[2][1] + " | " + obj.listBoard[2][2]+"\n")
 
 game1=Board()
 game1.start()
