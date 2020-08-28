@@ -1,3 +1,15 @@
+commit e13c7f54bc7d47b784b5bc12ee1d1ab16070a202
+Author: Thatphum <s6201012620112@email.kmutnb.ac.th>
+Date:   Fri Aug 28 12:16:56 2020 +0700
+
+    -Edit Code look like plan
+
+commit 9195e6ca8c9d27a7fa5c9255f02b892facb28072
+Author: Thatphum <s6201012620112@email.kmutnb.ac.th>
+Date:   Fri Aug 21 14:41:10 2020 +0700
+
+    Add git-log
+
 commit 53fb0148e41e8d4fc2d70fedf6b5364912dbd681
 Author: Thatphum <s6201012620112@email.kmutnb.ac.th>
 Date:   Fri Aug 21 14:39:56 2020 +0700
